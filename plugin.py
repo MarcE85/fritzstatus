@@ -58,7 +58,7 @@ class BasePlugin:
             logFile = open(Parameters['HomeFolder'] + Parameters['Key']
                            + '.log', 'w')
         if (len(Devices) == 0):
-            Domoticz.Device(Name="Socket 1", Unit=1, TypeName="Switch").Create()
+            Domoticz.Device(Name="Test", Unit=1, TypeName="Switch").Create()
             Domoticz.Log("Device created.")
     def onStop(self):
         Domoticz.Log('onStop called')
